@@ -1,12 +1,12 @@
+import classes from "./Button.module.scss"
 
-type ButtonProps = {
+interface ButtonProps {
     text: string;
+    onClick: () => void;
 }
 
-export const Button = ({text}: ButtonProps) => {
-    return (
-        <>
-            <button>{text}</button>
-        </>
-    )
+export const Button = ({text, onClick}: ButtonProps) => {
+    return <button onClick={onClick} className={classes.button}>
+        {text}
+    </button>
 }

@@ -1,11 +1,13 @@
 
 import './App.scss'
 import AppRoutes from "./appRoutes/AppRoutes.tsx";
+import {TaskProvider} from "./helpers/TaskProvider.tsx";
 
 function App() {
 
-  return (
-    <AppRoutes />
+  return ( <TaskProvider>
+        <AppRoutes />
+      </TaskProvider>
   )
 }
 

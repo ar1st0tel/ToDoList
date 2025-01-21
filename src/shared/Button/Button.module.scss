@@ -1,1 +1,16 @@
-
+.button {
+  height: auto;
+  width: auto;
+  outline: none;
+  border: none;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border: none;
+  }
+  &:focus,
+  &:active {
+    font-weight: bold;
+  }
+}
