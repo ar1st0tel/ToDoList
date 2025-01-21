@@ -1,4 +1,4 @@
-import Background from "../../shared/Container/Container.tsx";
+import Background from "../../Container/Container.tsx";
 import classes from "./MainPage.module.scss"
 
 const MainPage = () => {
