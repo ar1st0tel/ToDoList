@@ -1,0 +1,66 @@
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 5vh;
+  margin-bottom: 10px;
+}
+.paragraph {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  margin-left: 2vw;
+}
+.line {
+  text-decoration: line-through;
+}
+.inputArea {
+  border-radius: 20px 0 0 20px;
+  border: 2px solid black;
+  border-right: none;
+  width: 15vw;
+  text-align: center;
+  background-color: #f9f9f9;
+  &:active, &:focus {
+    outline: none;
+    border-right: none;
+  }
+}
+.button {
+  border-radius: 0 20px 20px 0;
+  background-color: #f9f9f9;
+  border: 2px solid black;
+  border-left: none;
+  outline: none;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border: 2px solid black;
+    border-left: none;
+  }
+}
+.case {
+  height: 5vh;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.delete{
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
