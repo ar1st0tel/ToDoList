@@ -2,6 +2,9 @@ import { ReactNode, useState} from "react";
 import {TaskInterface} from "../types.ts";
 import {getTasksFromStorage} from "./TaskHelpers.tsx";
 import { TaskContext} from "../types.ts";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import React from 'react'
 
 export const TaskProvider = ({ children }: {children: ReactNode}) => {
     const [tasks, setTasks] = useState<TaskInterface[]>(getTasksFromStorage)

@@ -3,6 +3,8 @@
   width: auto;
   outline: none;
   border: none;
+  background: none;
+  color: darkgray;
   &:hover,
   &:focus,
   &:active {
@@ -12,5 +14,9 @@
   &:focus,
   &:active {
     font-weight: bold;
+    color: black;
+  }
+  &:hover {
+    color: black;
   }
 }

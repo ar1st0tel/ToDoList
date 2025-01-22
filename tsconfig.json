@@ -1,4 +1,20 @@
 {
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "jsx": "react-jsx",
+    "types": ["@types/node", "@testing-library/jest-dom", "@types/react"],
+    "moduleResolution": "Node",
+    "noUnusedLocals": false
+  },
+  "include": [
+    "src/**/*",
+    "src/**/*.d.ts"
+    ],
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },

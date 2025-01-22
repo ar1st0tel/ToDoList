@@ -1,9 +1,14 @@
-import {createContext} from "react";
+import React, {createContext} from "react";
 
 export interface TaskInterface {
     id: number;
     name: string;
     isCompleted: boolean;
+}
+export interface TaskProps {
+    task: TaskInterface;
+    toggleTask: () => void;
+    removeTask: (e: React.MouseEvent) => void;
 }
 
 export interface TaskContextInterface {

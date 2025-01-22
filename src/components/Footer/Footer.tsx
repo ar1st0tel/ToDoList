@@ -1,7 +1,9 @@
 import {Button} from "../../shared/Button/Button.tsx";
 import classes from "./Footer.module.scss"
 import {useTaskContext} from "../../helpers/useTaskContext.tsx";
-
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import React from 'react';
 
 
 export const Footer = () => {
