@@ -1,11 +1,11 @@
 import {TaskInterface} from "../types.ts";
 
 export const Finished = () => {
-    return "✅"
+    return <span>✅</span>
 }
 
 export const Current = () => {
-    return "❎"
+    return <span>⬜</span>
 }
 
 // eslint-disable-next-line react-refresh/only-export-components

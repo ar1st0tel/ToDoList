@@ -1,12 +1,12 @@
-import { ReactNode, useState} from "react";
+import {ReactNode, useState} from "react";
 import {TaskInterface} from "../types.ts";
 import {getTasksFromStorage} from "./TaskHelpers.tsx";
-import { TaskContext} from "../types.ts";
+import {TaskContext} from "../types.ts";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import React from 'react'
 
-export const TaskProvider = ({ children }: {children: ReactNode}) => {
+export const TaskProvider = ({children}: { children: ReactNode }) => {
     const [tasks, setTasks] = useState<TaskInterface[]>(getTasksFromStorage)
     const [filter, setFilter] = useState<string>("All");
 
@@ -39,7 +39,8 @@ export const TaskProvider = ({ children }: {children: ReactNode}) => {
         return true
     })
     return (
-        <TaskContext.Provider value={{tasks, addTask, toggleTask, removeTask, removeAllCompleted, setFilter, filteredTasks}}>
+        <TaskContext.Provider
+            value={{tasks, addTask, toggleTask, removeTask, removeAllCompleted, setFilter, filteredTasks}}>
             {children}
         </TaskContext.Provider>
     )

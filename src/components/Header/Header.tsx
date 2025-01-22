@@ -5,6 +5,6 @@ import React from 'react';
 
 export const Header = () => {
     return (
-        <div className={classes.title}>todos </div>
+        <div className={classes.title}>todos 📝</div>
     )
 }

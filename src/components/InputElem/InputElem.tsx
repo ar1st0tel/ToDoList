@@ -27,7 +27,7 @@ export const InputElem = ({addTask}: { addTask: (taskName: string) => void }) =>
     placeholder="Enter your description"
     className={classes.inputArea}
     />
-    <button onClick={handleAddTask} className={classes.button}>Add Task</button>
+    <button onClick={handleAddTask} className={classes.button}>+</button>
     </div>
 )
 };

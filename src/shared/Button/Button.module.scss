@@ -1,15 +1,16 @@
 .button {
+  font-family: "Times New Roman", sans-serif;
   height: auto;
   width: auto;
   outline: none;
   border: none;
   background: none;
   color: darkgray;
+  font-size: 20px;
   &:hover,
   &:focus,
-  &:active {
-    outline: none;
-    border: none;
+  &:active{
+    outline: 1px solid darkgray;
   }
   &:focus,
   &:active {

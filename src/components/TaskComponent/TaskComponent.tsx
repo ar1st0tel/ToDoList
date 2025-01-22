@@ -11,18 +11,19 @@ export const TaskComponent = () => {
     const {filteredTasks, addTask, removeTask, toggleTask} = useTaskContext();
 
 
-    return (
-        <div className={classes.back}>
+    return (<div className={classes.table}>
             <InputElem addTask={addTask}/>
-            {filteredTasks.map(task => (
-                <div className={classes.case} key={task.id}>
-                    <Task
-                        task={task}
-                        toggleTask={() => toggleTask(task.id)}
-                        removeTask={() => removeTask(task.id)}
-                    />
-                </div>
-            ))}
+            <div className={classes.back}>
+                {filteredTasks.map(task => (
+                    <div className={classes.case} key={task.id}>
+                        <Task
+                            task={task}
+                            toggleTask={() => toggleTask(task.id)}
+                            removeTask={() => removeTask(task.id)}
+                        />
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }

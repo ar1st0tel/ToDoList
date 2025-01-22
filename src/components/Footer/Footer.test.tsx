@@ -11,7 +11,7 @@ const mockData = {
 } as unknown as TaskContextInterface;
 
 describe("Footer Component", () => {
-    it("Отобрадает все кнопки", () => {
+    it("Отображает все кнопки", () => {
         render(
             <TaskContext.Provider value={mockData}>
                 <Footer />
