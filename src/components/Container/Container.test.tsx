@@ -2,7 +2,7 @@ import {render, screen} from '@testing-library/react';
 import Container from './Container';
 import {TaskProvider} from "../../helpers/TaskProvider.tsx";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
+// @ts-ignore
 import React from 'react';
 
 

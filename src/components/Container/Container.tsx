@@ -3,7 +3,7 @@ import {TaskComponent} from "../TaskComponent/TaskComponent.tsx";
 import {Header} from "../Header/Header.tsx";
 import {Footer} from "../Footer/Footer.tsx";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
+// @ts-ignore
 import React from 'react';
 
 

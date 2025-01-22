@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { Task } from "./Task.tsx";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
+// @ts-ignore
 import React from "react";
 
 const mockToggleTask = jest.fn();

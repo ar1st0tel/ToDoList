@@ -1,7 +1,7 @@
 import {render, screen, fireEvent} from "@testing-library/react";
 import {InputElem} from "./InputElem";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
+// @ts-ignore
 import React from 'react';
 
 describe("InputElem Component", () => {

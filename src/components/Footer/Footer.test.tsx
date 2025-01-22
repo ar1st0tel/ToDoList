@@ -2,7 +2,7 @@ import {fireEvent, render, screen} from "@testing-library/react";
 import { Footer } from "./Footer";
 import {TaskContext, TaskContextInterface} from "../../types";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
+// @ts-ignore
 import React from 'react';
 
 const mockData = {
