@@ -1,4 +1,4 @@
-import {TaskInterface} from "../types.ts";
+import {TaskInterface} from "../types";
 
 export const Finished = () => {
     return <span>✅</span>

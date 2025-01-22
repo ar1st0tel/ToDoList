@@ -2,17 +2,20 @@ export default {
     preset: 'ts-jest',
     testEnvironment: 'jest-environment-jsdom',
     setupFilesAfterEnv: ['@testing-library/jest-dom'],
-};module.exports = {
-    preset: 'ts-jest',
-    testEnvironment: 'jest-environment-jsdom',
-    setupFilesAfterEnv: ['@testing-library/jest-dom'],
     transform: {
-        '^.+\\.tsx?$': 'ts-jest',
+        '^.+\\.(ts|tsx)$': 'babel-jest',
+        '^.+\\.(js|jsx)$': 'babel-jest',
     },
     moduleNameMapper: {
-        '\\.scss$': 'jest-transform-stub',
+        '\\.module\\.scss$': '<rootDir>/__mocks__/styleMock.ts',
+        '\\.scss$': '<rootDir>/__mocks__/styleMock.ts',
     },
-    transformIgnorePatterns: [
+    testMatch: [
+        '**/src/**/*.{test,spec}.{ts,tsx}',
+    ],
+    testPathIgnorePatterns: [
         '/node_modules/',
+        '\\.d\\.ts$',
+        '\\.js$',
     ],
 };

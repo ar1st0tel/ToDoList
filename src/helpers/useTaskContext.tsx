@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import {TaskContext} from "../types.ts";
+import {TaskContext} from "../types";
 
 
 export const useTaskContext = () => {

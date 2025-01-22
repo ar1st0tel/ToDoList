@@ -1,7 +1,7 @@
 import classes from "./Container.module.scss"
-import {TaskComponent} from "../TaskComponent/TaskComponent.tsx";
-import {Header} from "../Header/Header.tsx";
-import {Footer} from "../Footer/Footer.tsx";
+import {TaskComponent} from "../TaskComponent/TaskComponent";
+import {Header} from "../Header/Header";
+import {Footer} from "../Footer/Footer";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import React from 'react';

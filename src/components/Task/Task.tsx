@@ -1,6 +1,6 @@
 import classes from "./Task.module.scss";
-import {Current, Finished} from "../../helpers/TaskHelpers.tsx";
-import {TaskProps} from "../../types.ts";
+import {Current, Finished} from "../../helpers/TaskHelpers";
+import {TaskProps} from "../../types";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import React from 'react'

@@ -1,7 +1,7 @@
 import {ReactNode, useState} from "react";
-import {TaskInterface} from "../types.ts";
-import {getTasksFromStorage} from "./TaskHelpers.tsx";
-import {TaskContext} from "../types.ts";
+import {TaskInterface} from "../types";
+import {getTasksFromStorage} from "./TaskHelpers";
+import {TaskContext} from "../types";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import React from 'react'

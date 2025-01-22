@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "allowImportingTsExtensions": true,
+    "baseUrl": "./",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "target": "ESNext",
@@ -9,12 +9,25 @@
     "jsx": "react-jsx",
     "types": ["@types/node", "@testing-library/jest-dom", "@types/react"],
     "moduleResolution": "Node",
-    "noUnusedLocals": false
+    "noUnusedLocals": false,
+    "paths": {
+      "*.scss": ["src/*"]
+    }
   },
+  "declaration": false,
+  "outDir": "./dist",
+  "esModuleInterop": true,
+  "skipLibCheck": true,
   "include": [
     "src/**/*",
-    "src/**/*.d.ts"
-    ],
+    "types/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.test.tsx",
+    "src/**/*.scss",
+    "src/__mocks__"
+  ],
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { Task } from "./Task.tsx";
+import { Task } from "./Task";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import React from "react";

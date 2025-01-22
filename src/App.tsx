@@ -1,7 +1,7 @@
 
 import './App.scss'
-import AppRoutes from "./appRoutes/AppRoutes.tsx";
-import {TaskProvider} from "./helpers/TaskProvider.tsx";
+import AppRoutes from "./appRoutes/AppRoutes";
+import {TaskProvider} from "./helpers/TaskProvider";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import React from 'react'

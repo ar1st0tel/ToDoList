@@ -14,9 +14,9 @@ describe("InputElem Component", () => {
     it("Отображает поле ввода и  кнопку", () => {
         render(<InputElem addTask={mockFunc}/>);
         expect(screen.getByPlaceholderText("Enter your description")).toBeInTheDocument();
-        expect(screen.getByText("Add Task")).toBeInTheDocument();
+        expect(screen.getByText("+")).toBeInTheDocument();
     });
-    it("добавляет задачу при нажатии на кнопку addTask", () => {
+    it("добавляет задачу при нажатии на кнопку +", () => {
         render(<InputElem addTask={mockFunc}/>);
         const input = screen.getByPlaceholderText("Enter your description") as unknown as HTMLInputElement;
         fireEvent.change(input, {target: {value: "Added"}});
@@ -25,7 +25,7 @@ describe("InputElem Component", () => {
     it("очищает поле ввода после добавления задачи", () => {
         render(<InputElem addTask={mockFunc}/>);
         const input = screen.getByPlaceholderText("Enter your description") as HTMLInputElement;
-        const button = screen.getByText("Add Task");
+        const button = screen.getByText("+");
 
         fireEvent.change(input, {target: {value: "Added"}});
 
