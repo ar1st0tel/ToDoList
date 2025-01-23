@@ -1,10 +1,10 @@
-import Background from "../../components/Container/Container.tsx";
 import classes from "./MainPage.module.scss";
+import Container from "../../components/Container/Container.tsx";
 
 const MainPage = () => {
     return (
         <div className={classes.background}>
-          <Background />
+          <Container />
         </div>
     )
 };

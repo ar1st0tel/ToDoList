@@ -5,7 +5,7 @@ import MainPage from "../pages/mainPage/MainPage.tsx";
 
 function AppRoutes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ToDoList/">
       <Routes>
         <Route path="/" element={<MainPage />} />
       </Routes>
