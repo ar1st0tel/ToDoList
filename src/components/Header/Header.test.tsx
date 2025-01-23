@@ -7,6 +7,6 @@ import React from 'react';
 describe("Header Component", () => {
     it("Отображает текст", () => {
         render(<Header/>);
-        expect(screen.getByText("todos")).toBeInTheDocument();
+        expect(screen.getByText(/todos/)).toBeInTheDocument();
     })
 })

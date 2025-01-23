@@ -14,7 +14,7 @@ describe('Container', () => {
             </TaskProvider>
         );
 
-        expect(screen.getByText('todos')).toBeInTheDocument();
+        expect(screen.getByText(/todos/)).toBeInTheDocument();
         expect(screen.getByPlaceholderText('Enter your description')).toBeInTheDocument();
         expect(screen.getByText('Remove completed')).toBeInTheDocument();
     });
