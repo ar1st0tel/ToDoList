@@ -1,14 +1,12 @@
 import {render, screen, fireEvent} from "@testing-library/react";
 import {InputElem} from "./InputElem";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import React from 'react';
+import {vi} from "vitest";
 
 describe("InputElem Component", () => {
-    const mockFunc = jest.fn();
+    const mockFunc = vi.fn();
 
     beforeEach(() => {
-        jest.clearAllMocks();
+        vi.clearAllMocks();
     });
 
     it("Отображает поле ввода и  кнопку", () => {

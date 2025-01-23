@@ -7,14 +7,10 @@
     "module": "ESNext",
     "strict": true,
     "jsx": "react-jsx",
-    "types": ["@types/node", "@testing-library/jest-dom", "@types/react"],
+    "types": ["@types/node", "vitest/globals", "@types/react", "@testing-library/jest-dom"],
     "moduleResolution": "Node",
     "noUnusedLocals": false
   },
-  "include": [
-    "src/**/*",
-    "src/**/*.d.ts"
-    ],
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },

@@ -1,13 +1,11 @@
 import {fireEvent, render, screen} from "@testing-library/react";
 import { Footer } from "./Footer";
 import {TaskContext, TaskContextInterface} from "../../types";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import React from 'react';
+import {vi} from "vitest";
 
 const mockData = {
-    removeAllCompleted: jest.fn(),
-    setFilter: jest.fn(),
+    removeAllCompleted: vi.fn(),
+    setFilter: vi.fn(),
 } as unknown as TaskContextInterface;
 
 describe("Footer Component", () => {

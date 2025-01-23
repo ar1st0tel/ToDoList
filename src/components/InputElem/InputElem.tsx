@@ -1,8 +1,5 @@
 import {ChangeEvent, useState} from "react";
 import classes from "../TaskComponent/TaskComponent.module.scss";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import React from 'react';
 
 export const InputElem = ({addTask}: { addTask: (taskName: string) => void }) => {
     const [value, setValue] = useState("");

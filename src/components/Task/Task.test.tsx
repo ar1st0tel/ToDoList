@@ -1,11 +1,9 @@
 import { render, screen } from "@testing-library/react";
 import { Task } from "./Task.tsx";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import React from "react";
+import {vi} from "vitest";
 
-const mockToggleTask = jest.fn();
-const mockRemoveTask = jest.fn();
+const mockToggleTask = vi.fn();
+const mockRemoveTask = vi.fn();
 const task = { id: 1, name: "Test", isCompleted: false };
 
 describe('Task', () => {
